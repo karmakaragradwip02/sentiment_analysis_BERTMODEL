@@ -156,7 +156,7 @@ def main():
                 avg_loss = total_loss / len(train_loader)
                 print(f"Average Loss after epoch {epoch}: {avg_loss}")
                 mlflow.log_metrics({f"Loss_epoch_{epoch}": avg_loss})
-
+            mlflow.pytorch.log_model(model, "model")
             model.eval()
             all_predictions, all_labels = prediction(test_dataset, device, model)
             accuracy, precision, recall, f1 = metrics(all_labels, all_predictions)

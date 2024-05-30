@@ -1,0 +1,15 @@
+artifact_uri: file:///E:/Large%20Language%20Model/IMDB_LLM_MLFlow/mlruns/0/641360eb2089457a975507f72fd44477/artifacts
+end_time: 1717043920540
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 641360eb2089457a975507f72fd44477
+run_name: salty-koi-162
+run_uuid: 641360eb2089457a975507f72fd44477
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1717038327136
+status: 3
+tags: []
+user_id: Karma
