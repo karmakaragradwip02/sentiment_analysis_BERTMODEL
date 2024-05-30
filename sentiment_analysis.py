@@ -108,12 +108,12 @@ def main():
     os.environ['CUDA_LAUNCH_BLOCKING'] = '1'
 
     # Set up DagsHub as the remote tracking server
-    #MLFLOW_TRACKING_URI = "https://dagshub.com/karmakaragradwip02/sentiment_analysis_BERTMODEL.mlflow"
-    #os.environ['MLFLOW_TRACKING_URI'] = MLFLOW_TRACKING_URI
-    #os.environ['MLFLOW_TRACKING_USERNAME'] = 'karmakaragradwip02'
-    #os.environ['MLFLOW_TRACKING_PASSWORD'] = '9ccb0f28354fcca6469017b32544fa0704b9c343'
+    MLFLOW_TRACKING_URI = "https://dagshub.com/karmakaragradwip02/sentiment_analysis_BERTMODEL.mlflow"
+    os.environ['MLFLOW_TRACKING_URI'] = MLFLOW_TRACKING_URI
+    os.environ['MLFLOW_TRACKING_USERNAME'] = 'karmakaragradwip02'
+    os.environ['MLFLOW_TRACKING_PASSWORD'] = '9ccb0f28354fcca6469017b32544fa0704b9c343'
 
-    #mlflow.set_tracking_uri(MLFLOW_TRACKING_URI)
+    mlflow.set_tracking_uri(MLFLOW_TRACKING_URI)
 
     y_train, y_test, train_list, test_list = get_train_test_list('train.csv', 'test.csv')
     train_encodings, test_encodings, train_labels, test_labels = tokenizer_encoding_labels(train_list, test_list, y_train, y_test)
