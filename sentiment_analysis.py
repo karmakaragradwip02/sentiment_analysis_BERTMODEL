@@ -128,13 +128,13 @@ def main():
 
     train_loader = DataLoader(train_dataset, batch_size=4, shuffle=True)
 
-    optim = AdamW(model.parameters(), lr=5e-5, eps=1e-8, weight_decay=0.01)
+    optim = AdamW(model.parameters(), lr=5e-6, eps=2e-7, weight_decay=0.001)
 
     with mlflow.start_run() as run:
         try:
             # Log hyperparameters
-            mlflow.log_param("learning_rate", 5e-5)
-            mlflow.log_param("epsilon", 1e-8)
+            mlflow.log_param("learning_rate", 5e-6)
+            mlflow.log_param("epsilon", 2e-7)
             mlflow.log_param("weight_decay", 0.01)
             mlflow.log_param("batch_size", 4)
 
