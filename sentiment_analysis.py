@@ -165,10 +165,10 @@ def main():
             print("Recall:", recall)
             print("F1:", f1)
 
-            mlflow.log_metric("Accuracy:", accuracy)
-            mlflow.log_metric("Precision:", precision)
-            mlflow.log_metric("Recall:", recall)
-            mlflow.log_metric("F1:", f1)
+            mlflow.log_metrics("Accuracy:", accuracy)
+            mlflow.log_metrics("Precision:", precision)
+            mlflow.log_metrics("Recall:", recall)
+            mlflow.log_metrics("F1:", f1)
 
         except Exception as e:
             print(f"Exception during training: {e}")
