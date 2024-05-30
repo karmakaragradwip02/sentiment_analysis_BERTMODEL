@@ -20,7 +20,7 @@ def get_train_test_list(train, test):
         print(f"Error: {e}")
         return [], []
 
-    X_sampled = X.sample(n=2000, random_state=1)
+    X_sampled = X.sample(n=4000, random_state=1)
     x_sampled = x.sample(n=2000, random_state=1)
 
     X_train = X_sampled['Text']
