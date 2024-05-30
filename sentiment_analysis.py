@@ -108,7 +108,7 @@ def main():
     os.environ['CUDA_LAUNCH_BLOCKING'] = '1'
 
     # Set up DagsHub as the remote tracking server
-    #MLFLOW_TRACKING_URI = "https://dagshub.com/karmakaragradwip02/sequence_classification-MLFlow-.mlflow"
+    #MLFLOW_TRACKING_URI = "https://dagshub.com/karmakaragradwip02/sentiment_analysis_BERTMODEL.mlflow"
     #os.environ['MLFLOW_TRACKING_URI'] = MLFLOW_TRACKING_URI
     #os.environ['MLFLOW_TRACKING_USERNAME'] = 'karmakaragradwip02'
     #os.environ['MLFLOW_TRACKING_PASSWORD'] = '9ccb0f28354fcca6469017b32544fa0704b9c343'
